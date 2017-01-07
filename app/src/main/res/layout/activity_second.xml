@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pablo384.leccion1tarea.SecondActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button_siguiente2">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/seekBar"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="17dp">
+
+            <RadioButton
+                android:id="@+id/radioButton_Greeter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Greeter"
+                android:checked="true"
+                />
+
+            <RadioButton
+                android:id="@+id/radioButton_Farewall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Farewell" />
+        </RadioGroup>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="44dp"
+            android:max="80"
+            android:progress="18" />
+
+        <TextView
+            android:id="@+id/textView_edad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekBar"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="18"
+            android:textColor="@color/colorAccent"
+            android:textSize="32dp" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_siguiente2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorAccent"
+        android:textColor="@color/blanco"
+        android:text="NEXT STEP" />
+</RelativeLayout>
